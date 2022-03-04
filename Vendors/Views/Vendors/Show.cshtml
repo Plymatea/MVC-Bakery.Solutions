@@ -15,7 +15,10 @@
   <ol>
     @foreach (Order element in Model["orders"])
     {
-      <li><a href='/vendors/@Model["vendors"].Id/orders/@element.Id'>@element.Title</a></li>
+      <li><a href='/vendors/@Model["vendors"].Id/orders/@element.Id'>@element.Title:</a> </li>
+      <ul>
+        <li>@element.Desc</li>
+      </ul>
     }
   </ol>
 }

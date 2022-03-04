@@ -8,17 +8,17 @@ namespace Vendors.Models
     public string Vendor { get; set; }
     public string Desc { get; set; }
     public string Price { get; set; }
-    public string Date { get; set; }
+    public string OrderDate { get; set; }
 
     public int Id { get; }
     private static List<Order> _instances = new List<Order> {};
-    public Order(string orderTitle, string vendor, string orderDesc, string price, string date)
+    public Order(string orderTitle, string vendor, string orderDesc, string price, string orderDate)
     {
       Title = orderTitle;
       Vendor = vendor;
       Desc = orderDesc;
       Price = price;
-      Date = date;
+      OrderDate = orderDate;
       _instances.Add(this);
       Id = _instances.Count;
     }

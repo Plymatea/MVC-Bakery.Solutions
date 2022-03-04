@@ -3,8 +3,10 @@
 }
 <h5>@Model["vendors"].Name Order Details: </h5>
 
-    <p>Name: @Model["orders"].Title</p>
-
+    <p>Title: @Model["orders"].Title</p>
+    <p>Description: @Model["orders"].Desc</p>
+    <p>Order Date: @Model["orders"].OrderDate</p>
+    <p>Price: $@Model["orders"].Price</p>
 
     <p><a href='/vendors/@Model["vendors"].Id/orders/new'>Add another Order</a></p>
     <p><a href='/vendors/@Model["vendors"].Id/orders'>Back to all orders with @Model["vendors"].Name</a></p>
