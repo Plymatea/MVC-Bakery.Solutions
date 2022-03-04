@@ -22,9 +22,9 @@ namespace Vendors.Controllers
     }
 
     [HttpPost("/vendors")]
-    public ActionResult Create(string vendorName)
+    public ActionResult Create(string vendorName, string desc)
     {
-      Vendor newVendor = new Vendor(vendorName);
+      Vendor newVendor = new Vendor(vendorName, desc);
       return RedirectToAction("Index");
     }
 

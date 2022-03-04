@@ -6,6 +6,6 @@
     <p>Name: @Model["orders"].Name</p>
 
 
-    <a href='/vendors/@Model["vendors"].Id/orders/new'>Add another Order</a>
-    <br>
-    <a href='/vendors'>View all vendors</a>
+    <p><a href='/vendors/@Model["vendors"].Id/orders/new'>Add another Order</a></p>
+    <p><a href='/vendors/@Model["vendors"].Id/orders'>Back to all orders with @Model["vendors"].Name</a></p>
+    <p><a href='/vendors'>Back to all vendors</a></p>
