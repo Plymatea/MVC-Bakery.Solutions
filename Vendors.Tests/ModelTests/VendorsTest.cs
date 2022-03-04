@@ -48,5 +48,12 @@ namespace Vendors.Tests
       vendors.Add(newVendor);
       CollectionAssert.AreEqual(vendors, Vendor.GetAll());
     }
+    
+    [TestMethod]
+    public void Find_RetrieveVendorFromList_True()
+    {
+      Vendor newVendor = new Vendor("test");
+      Assert.AreEqual("hello", Vendor.Find(1));
+    }
   }
 }
