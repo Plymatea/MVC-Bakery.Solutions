@@ -45,7 +45,7 @@ namespace Vendors.Tests
     {
       Vendor newVendor = new Vendor("test");
       List<Vendor> vendors = new List<Vendor> {};
-      // vendors.Add(newVendor);
+      vendors.Add(newVendor);
       CollectionAssert.AreEqual(vendors, Vendor.GetAll());
     }
   }
