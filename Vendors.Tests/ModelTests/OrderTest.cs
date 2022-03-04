@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Vendors.Models;
 using System;
 
-namespace Vendors.Tests
+namespace Orders.Tests
 {
   [TestClass]
   public class OrderTests : IDisposable
@@ -11,14 +11,24 @@ namespace Vendors.Tests
 
     public void Dispose()
     {
-      Vendor.ClearAll();
+      Order.ClearAll();
     }
 
     [TestMethod]
-    public void VendorConstructor_CreatesInstanceOfItem_Item()
+    public void OrderConstructor_CreatesInstanceOfItem_Item()
     {
       Order newOrder = new Order("test", "test");
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
+
+        [TestMethod]
+    public void OrderConstructor_RetrievePropertiesOfItem_True()
+    {
+      Order newOrder = new Order("test", "test");
+      Assert.AreEqual("hello", newOrder.Vendor);
+      Assert.AreEqual(1, newOrder.Id);
+    }
+
+ 
   }
 }
