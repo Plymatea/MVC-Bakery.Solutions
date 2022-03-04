@@ -39,5 +39,14 @@ namespace Vendors.Tests
       Vendor.ClearAll();
       CollectionAssert.AreEqual(vendors, Vendor.GetAll());
     }
+
+    [TestMethod]
+    public void GetAll_Retrieve_instances_True()
+    {
+      Vendor newVendor = new Vendor("test");
+      List<Vendor> vendors = new List<Vendor> {};
+      // vendors.Add(newVendor);
+      CollectionAssert.AreEqual(vendors, Vendor.GetAll());
+    }
   }
 }
