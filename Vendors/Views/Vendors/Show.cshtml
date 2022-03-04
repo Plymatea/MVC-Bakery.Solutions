@@ -1,0 +1,20 @@
+@{
+  Layout = "_Layout";
+}
+@using Vendors.Models;
+
+@* <h3>Here are all the orders from <strong>@Model["vendors"].Name:</strong> </h3> *@
+
+  @if (@Model["orders"].Count == 0)
+{
+  <h3>This vendor has no order yet. </h3>
+}
+  @foreach (Order element in Model["orders"])
+{
+  @* <h4><a href='/vendors/@Model["vendors"].Id/orders/@element.Id'>@element.Title</a></h4> *@
+}
+
+<form action='/vendors/@Model["vendor"].Id/orders/new' method="get">
+  <button class="btn btn-primary btn-lrg">Add an Order</button>
+</form>
+<p><a href="/vendors">Back to vendors</a></p>

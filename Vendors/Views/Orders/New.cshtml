@@ -1,0 +1,13 @@
+@{
+  Layout = "_Layout";
+}
+@using Vendors.Models
+
+<h3>Add a new order to vendors: @Model.Name</h3>
+<form action="/vendorss/@Model.Id/orders" method="post">
+  <input id="vendors" name="vendors" type="hidden" value="@Model.Name">
+  <label for="title">order Title</label>
+  <input type="text" name="titles" id="title">
+  <button type="submit">Submit</button>
+</form>
+<p><a href="/vendors">Back to vendors</a></p>
