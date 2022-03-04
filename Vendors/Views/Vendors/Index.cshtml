@@ -3,20 +3,24 @@
 }
 @using Vendors.Models;
 
-<h3>Vendors</h3>
+
 
 @if (@Model.Count == 0)
 {
-  <h3>No vendors have been added yet!</h3>
-} 
-
-@foreach (Vendor element in Model)
+  <h5>You have no vendors! Add a vendor to get started. </h5>
+} else
 {
-  @* <h3><a href='/vendors/@element.Id'>@element.Name</a></h3> *@
+  <p>Click a vendor to access their order details:</p>
+  <h5>Vendors:</h5>
+  <ul>
+    @foreach (Vendor element in Model)
+    {
+      <li><a href='/vendors/@element.Id'>@element.Name</a></li>
+    }
+  </ul>
 }
-
 <form action="/vendors/new" method="get">
-  <button class="btn btn-primary btn-lrg">Add an Vendors!</button>
+  <button class="btn btn-primary btn-lrg">Add a Vendor!</button>
 </form>
 
 <form action="/vendors/delete" method="post">

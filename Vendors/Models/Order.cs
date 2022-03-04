@@ -4,13 +4,13 @@ namespace Vendors.Models
 {
   public class Order
   {
-    public string Title { get; set; }
+    public string Name { get; set; }
     public string Vendor { get; set; }
     public int Id { get; }
     private static List<Order> _instances = new List<Order> {};
-    public Order(string title, string vendor)
+    public Order(string orderName, string vendor)
     {
-      Title = title;
+      Name = orderName;
       Vendor = vendor;
       _instances.Add(this);
       Id = _instances.Count;

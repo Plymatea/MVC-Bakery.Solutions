@@ -5,7 +5,7 @@ using Vendors.Models;
 
 namespace Vendors.Controllers
 {
-  public class VendorController : Controller
+  public class VendorsController : Controller
   {
 
     [HttpGet("/vendors")]
@@ -40,16 +40,16 @@ namespace Vendors.Controllers
     }
 
     // This one creates new Orders within a given Category, not new Categories:
-    [HttpPost("/vendors/{vendorId}/orders")]
-    public ActionResult Create(int vendorId, string titles, string vendor)
+    [HttpPost("/vendors/{vendorId}/orders/")]
+    public ActionResult Create(int vendorId, string orderName, string vendor)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
       Vendor foundVendor = Vendor.Find(vendorId);
-      Order newOrder = new Order(titles, vendor);
+      Order newOrder = new Order(orderName, vendor);
       foundVendor.AddOrder(newOrder);
       List<Order> vendorOrders = foundVendor.Orders;
       model.Add("orders", vendorOrders);
-      model.Add("vendor", foundVendor);
+      model.Add("vendors", foundVendor);
       return View("Show", model);
     }
 
