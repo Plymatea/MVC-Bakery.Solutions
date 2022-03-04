@@ -26,7 +26,7 @@ namespace Vendors.Tests
     {
       Vendor newVendor = new Vendor("test");
       Assert.AreEqual("test", newVendor.Name);
-      Assert.AreEqual(2, newVendor.Id);
+      Assert.AreEqual(1, newVendor.Id);
       // List<Order> orders = new List<Order> {};
       // CollectionAssert.AreEqual(orders, newVendor.Orders);
     }
