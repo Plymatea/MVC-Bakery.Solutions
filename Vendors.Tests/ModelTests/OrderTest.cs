@@ -25,7 +25,7 @@ namespace Orders.Tests
     public void OrderConstructor_RetrievePropertiesOfItem_True()
     {
       Order newOrder = new Order("test", "test");
-      Assert.AreEqual("hello", newOrder.Vendor);
+      Assert.AreEqual("test", newOrder.Vendor);
       Assert.AreEqual(1, newOrder.Id);
     }
 
