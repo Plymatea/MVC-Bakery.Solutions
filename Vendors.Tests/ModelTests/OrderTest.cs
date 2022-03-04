@@ -43,7 +43,7 @@ namespace Orders.Tests
     {
       Order newOrder = new Order("test", "test");
       List<Order> Orders = new List<Order> {};
-      // Orders.Add(newOrder);
+      Orders.Add(newOrder);
       CollectionAssert.AreEqual(Orders, Order.GetAll());
     }
     
