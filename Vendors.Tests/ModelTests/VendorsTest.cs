@@ -18,7 +18,7 @@ namespace Vendors.Tests
     public void VendorConstructor_CreatesInstanceOfItem_Item()
     {
       Vendor newVendor = new Vendor("test");
-      Assert.AreEqual(typeof(Order), newVendor.GetType());
+      Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
   }
 }
