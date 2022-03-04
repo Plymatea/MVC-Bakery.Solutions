@@ -1,0 +1,133 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Person\\Desktop\\Epicodus\\MVC-Bakery.Solutions\\Vendors.Tests\\Vendors.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Person\\Desktop\\Epicodus\\MVC-Bakery.Solutions\\Vendors.Tests\\Vendors.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Person\\Desktop\\Epicodus\\MVC-Bakery.Solutions\\Vendors.Tests\\Vendors.Tests.csproj",
+        "projectName": "Vendors.Tests",
+        "projectPath": "C:\\Users\\Person\\Desktop\\Epicodus\\MVC-Bakery.Solutions\\Vendors.Tests\\Vendors.Tests.csproj",
+        "packagesPath": "C:\\Users\\Person\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Person\\Desktop\\Epicodus\\MVC-Bakery.Solutions\\Vendors.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Person\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Person\\Desktop\\Epicodus\\MVC-Bakery.Solutions\\Vendors\\Vendors.csproj": {
+                "projectPath": "C:\\Users\\Person\\Desktop\\Epicodus\\MVC-Bakery.Solutions\\Vendors\\Vendors.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[1.3.2, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[1.3.2, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Person\\Desktop\\Epicodus\\MVC-Bakery.Solutions\\Vendors\\Vendors.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Person\\Desktop\\Epicodus\\MVC-Bakery.Solutions\\Vendors\\Vendors.csproj",
+        "projectName": "Vendors",
+        "projectPath": "C:\\Users\\Person\\Desktop\\Epicodus\\MVC-Bakery.Solutions\\Vendors\\Vendors.csproj",
+        "packagesPath": "C:\\Users\\Person\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Person\\Desktop\\Epicodus\\MVC-Bakery.Solutions\\Vendors\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Person\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
