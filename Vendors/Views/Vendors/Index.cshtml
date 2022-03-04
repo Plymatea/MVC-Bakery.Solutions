@@ -15,7 +15,7 @@
   <ul>
     @foreach (Vendor element in Model)
     {
-      <li><a href='/vendors/@element.Id'>@element.Name</a></li>
+      <li><a href='/vendors/@element.Id'>@element.Name</a>: @element.Desc</li>
     }
   </ul>
 }

@@ -17,14 +17,14 @@ namespace Orders.Tests
     [TestMethod]
     public void OrderConstructor_CreatesInstanceOfItem_Item()
     {
-      Order newOrder = new Order("test", "test");
+      Order newOrder = new Order("test", "test", "test", "test", "test");
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
 
         [TestMethod]
     public void OrderConstructor_RetrievePropertiesOfItem_True()
     {
-      Order newOrder = new Order("test", "test");
+      Order newOrder = new Order("test", "test", "test", "test", "test");
       Assert.AreEqual("test", newOrder.Vendor);
       Assert.AreEqual(1, newOrder.Id);
     }
@@ -32,7 +32,7 @@ namespace Orders.Tests
     [TestMethod]
     public void ClearAll_ClearOrderList_True()
     {
-      Order newOrder = new Order("test", "test");
+      Order newOrder = new Order("test", "test", "test", "test", "test");
       List<Order> Orders = new List<Order> {};
       Order.ClearAll();
       CollectionAssert.AreEqual(Orders, Order.GetAll());
@@ -41,7 +41,7 @@ namespace Orders.Tests
     [TestMethod]
     public void GetAll_Retrieve_instances_True()
     {
-      Order newOrder = new Order("test", "test");
+      Order newOrder = new Order("test", "test", "test", "test", "test");
       List<Order> Orders = new List<Order> {};
       Orders.Add(newOrder);
       CollectionAssert.AreEqual(Orders, Order.GetAll());
@@ -50,7 +50,7 @@ namespace Orders.Tests
     [TestMethod]
     public void Find_RetrieveOrderFromList_True()
     {
-      Order newOrder = new Order("test", "test");
+      Order newOrder = new Order("test", "test", "test", "test", "test");
       Assert.AreEqual(newOrder, Order.Find(1));
     }
   }

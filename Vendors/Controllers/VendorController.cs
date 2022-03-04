@@ -22,9 +22,9 @@ namespace Vendors.Controllers
     }
 
     [HttpPost("/vendors")]
-    public ActionResult Create(string vendorName, string desc)
+    public ActionResult Create(string vendorName, string vendorDesc)
     {
-      Vendor newVendor = new Vendor(vendorName, desc);
+      Vendor newVendor = new Vendor(vendorName, vendorDesc);
       return RedirectToAction("Index");
     }
 
@@ -41,11 +41,11 @@ namespace Vendors.Controllers
 
     // This one creates new Orders within a given Category, not new Categories:
     [HttpPost("/vendors/{vendorId}/orders/")]
-    public ActionResult Create(int vendorId, string orderName, string vendor)
+    public ActionResult Create(int vendorId, string orderTitle, string vendor, string orderDesc, string price, string date)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
       Vendor foundVendor = Vendor.Find(vendorId);
-      Order newOrder = new Order(orderName, vendor);
+      Order newOrder = new Order(orderTitle, vendor, orderDesc, price, date);
       foundVendor.AddOrder(newOrder);
       List<Order> vendorOrders = foundVendor.Orders;
       model.Add("orders", vendorOrders);

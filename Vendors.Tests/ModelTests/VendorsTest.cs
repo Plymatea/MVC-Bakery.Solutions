@@ -60,7 +60,7 @@ namespace Vendors.Tests
     public void AddOrder_AddOrderToOrdersList_True()
     {
       Vendor newVendor = new Vendor("test", "test");
-      Order newOrder = new Order("test", "test");
+      Order newOrder = new Order("test", "test", "test", "test", "test");
       newVendor.AddOrder(newOrder);
       List<Order> testOrders = new List<Order> {};
       testOrders.Add(newOrder);
