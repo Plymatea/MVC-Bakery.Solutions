@@ -63,7 +63,7 @@ namespace Vendors.Tests
       Order newOrder = new Order("test", "test");
       newVendor.AddOrder(newOrder);
       List<Order> testOrders = new List<Order> {};
-      // testOrders.Add(newOrder);
+      testOrders.Add(newOrder);
       CollectionAssert.AreEqual(testOrders, newVendor.Orders);
     }
   }
