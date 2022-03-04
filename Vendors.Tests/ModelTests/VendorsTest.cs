@@ -25,7 +25,7 @@ namespace Vendors.Tests
     public void VendorConstructior_RetrievePropertiesOfItem_True()
     {
       Vendor newVendor = new Vendor("test");
-      Assert.AreEqual("hello", newVendor.Name);
+      Assert.AreEqual("test", newVendor.Name);
       // Assert.AreEqual(1, newVendor.Id);
       // List<Order> orders = new List<Order> {};
       // CollectionAssert.AreEqual(orders, newVendor.Orders);
