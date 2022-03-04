@@ -30,5 +30,14 @@ namespace Vendors.Tests
       List<Order> orders = new List<Order> {};
       CollectionAssert.AreEqual(orders, newVendor.Orders);
     }
+
+    [TestMethod]
+    public void ClearAll_ClearVendorList_True()
+    {
+      Vendor newVendor = new Vendor("test");
+      List<Vendor> vendors = new List<Vendor> {};
+      // Vendor.ClearAll();
+      CollectionAssert.AreEqual(vendors, Vendor.GetAll());
+    }
   }
 }
