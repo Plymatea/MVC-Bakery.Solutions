@@ -29,6 +29,15 @@ namespace Orders.Tests
       Assert.AreEqual(1, newOrder.Id);
     }
 
+    [TestMethod]
+    public void ClearAll_ClearOrderList_True()
+    {
+      Order newOrder = new Order("test", "test");
+      List<Order> Orders = new List<Order> {};
+      // Order.ClearAll();
+      CollectionAssert.AreEqual(Orders, Order.GetAll());
+    }
+
  
   }
 }
