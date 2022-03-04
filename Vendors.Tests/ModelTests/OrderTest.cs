@@ -47,6 +47,11 @@ namespace Orders.Tests
       CollectionAssert.AreEqual(Orders, Order.GetAll());
     }
     
-
+    [TestMethod]
+    public void Find_RetrieveOrderFromList_True()
+    {
+      Order newOrder = new Order("test", "test");
+      Assert.AreEqual(newOrder, Order.Find(0));
+    }
   }
 }
