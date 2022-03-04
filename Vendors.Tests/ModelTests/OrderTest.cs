@@ -51,7 +51,7 @@ namespace Orders.Tests
     public void Find_RetrieveOrderFromList_True()
     {
       Order newOrder = new Order("test", "test");
-      Assert.AreEqual(newOrder, Order.Find(0));
+      Assert.AreEqual(newOrder, Order.Find(1));
     }
   }
 }
