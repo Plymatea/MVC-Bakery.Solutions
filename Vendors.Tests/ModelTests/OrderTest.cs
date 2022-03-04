@@ -38,6 +38,15 @@ namespace Orders.Tests
       CollectionAssert.AreEqual(Orders, Order.GetAll());
     }
 
- 
+    [TestMethod]
+    public void GetAll_Retrieve_instances_True()
+    {
+      Order newOrder = new Order("test", "test");
+      List<Order> Orders = new List<Order> {};
+      // Orders.Add(newOrder);
+      CollectionAssert.AreEqual(Orders, Order.GetAll());
+    }
+    
+
   }
 }
