@@ -12,10 +12,12 @@
 {
   <p>Click an order to access it's details:</p>
   <h5>Orders:</h5>
-  @foreach (Order element in Model["orders"])
-  {
-    <h4><a href='/vendors/@Model["vendors"].Id/orders/@element.Id'>@element.Name</a> Test</h4>
-  }
+  <ol>
+    @foreach (Order element in Model["orders"])
+    {
+      <li><a href='/vendors/@Model["vendors"].Id/orders/@element.Id'>@element.Name</a></li>
+    }
+  </ol>
 }
 <form action='/vendors/@Model["vendors"].Id/orders/new' method="get">
   <button class="btn btn-primary btn-lrg">Add an Order</button>

@@ -3,11 +3,11 @@
 }
 @using Vendors.Models
 
-<h3>Add a new order to @Model.Name</h3>
+<h5>Add a new order to @Model.Name</h5>
 <form action="/vendors/@Model.Id/orders" method="post">
   <input id="vendors" name="vendors" type="hidden" value="@Model.Name">
-  <label for="title">Order Name:</label>
-  <input type="text" name="titles" id="title">
+  <label for="orderName">Order Name:</label>
+  <input type="text" name="orderName" id="title">
   <button type="submit">Submit</button>
 </form>
 <p><a href="/vendors">Back to vendors</a></p>
