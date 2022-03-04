@@ -36,7 +36,7 @@ namespace Vendors.Tests
     {
       Vendor newVendor = new Vendor("test");
       List<Vendor> vendors = new List<Vendor> {};
-      // Vendor.ClearAll();
+      Vendor.ClearAll();
       CollectionAssert.AreEqual(vendors, Vendor.GetAll());
     }
   }
