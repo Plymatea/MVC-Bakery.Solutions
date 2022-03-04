@@ -34,7 +34,7 @@ namespace Orders.Tests
     {
       Order newOrder = new Order("test", "test");
       List<Order> Orders = new List<Order> {};
-      // Order.ClearAll();
+      Order.ClearAll();
       CollectionAssert.AreEqual(Orders, Order.GetAll());
     }
 
