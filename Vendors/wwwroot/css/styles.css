@@ -1,0 +1,7 @@
+.jumbotron {
+  background-image: url("../img/bread.jpg");
+  background-size: cover;
+  color: rgb(255, 98, 0);
+  text-align: center;
+  text-shadow: 2px 2px black;
+};

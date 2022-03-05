@@ -32,7 +32,7 @@ namespace Vendors
       {
         routes.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
       });
-
+      app.UseStaticFiles();   // New
       app.Run(async (context) =>
       {
         await context.Response.WriteAsync("Hello World!");

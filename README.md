@@ -27,7 +27,7 @@ _Application has the following functionality:_
 ## Setup/Installation Requirements
 
 * _Clone this repo to your local https://github.com/Plymatea/MVC-Bakery.Solutions.git_
-* _While in the `MVC-Bakery.Solutions/Vendors.Tests` folder execute $`dotnet test` on your terminal. This should install all dependencies needed and execute the test at the same time. _
+* _While in the `MVC-Bakery.Solutions/Vendors.Tests` folder execute $`dotnet test` on your terminal. This should install all dependencies needed and execute the test at the same time._
 * _Navigate to `MVC-Bakery.Solutions/Vendors` folder and execute $`dotnet run` to run the program._
 
 ## RoadMap
